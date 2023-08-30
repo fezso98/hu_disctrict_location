@@ -1,0 +1,152 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hu_disctrict_location
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0-20230524\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-30 21:09+0000\n"
+"PO-Revision-Date: 2023-08-30 23:09+0200\n"
+"Last-Translator: \n"
+"Language-Team: Keszisoft\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.3.2\n"
+
+#. module: hu_disctrict_location
+#: model:ir.model.fields,help:hu_disctrict_location.field_res_country_disctrict__name
+msgid "Administrative divisions of a county."
+msgstr "Vármegye adminisztratív egysége."
+
+#. module: hu_disctrict_location
+#: model:ir.model,name:hu_disctrict_location.model_res_city
+msgid "City"
+msgstr "Város"
+
+#. module: hu_disctrict_location
+#: model:ir.model,name:hu_disctrict_location.model_res_company
+msgid "Companies"
+msgstr "Szervezetek"
+
+#. module: hu_disctrict_location
+#: model:ir.model,name:hu_disctrict_location.model_res_partner
+msgid "Contact"
+msgstr "Kapcsolat"
+
+#. module: hu_disctrict_location
+#: model:ir.model,name:hu_disctrict_location.model_res_country
+#: model:ir.model.fields,field_description:hu_disctrict_location.field_res_country_disctrict__country_id
+#: model_terms:ir.ui.view,arch_db:hu_disctrict_location.view_country_disctrict_search
+msgid "Country"
+msgstr "Ország"
+
+#. module: hu_disctrict_location
+#: model:ir.model,name:hu_disctrict_location.model_res_country_state
+msgid "Country state"
+msgstr "Vármegye"
+
+#. module: hu_disctrict_location
+#: model_terms:ir.actions.act_window,help:hu_disctrict_location.action_country_disctrict
+msgid "Create a disctrict"
+msgstr "Készítsen egy Járás elemet"
+
+#. module: hu_disctrict_location
+#: model:ir.model.fields,field_description:hu_disctrict_location.field_res_country_disctrict__create_uid
+msgid "Created by"
+msgstr "Készítette"
+
+#. module: hu_disctrict_location
+#: model:ir.model.fields,field_description:hu_disctrict_location.field_res_country_disctrict__create_date
+msgid "Created on"
+msgstr "Készült"
+
+#. module: hu_disctrict_location
+#: model:ir.model.fields,field_description:hu_disctrict_location.field_res_partner__disctrict_id
+#: model:ir.model.fields,field_description:hu_disctrict_location.field_res_users__disctrict_id
+#: model_terms:ir.ui.view,arch_db:hu_disctrict_location.view_country_disctrict_form
+#: model_terms:ir.ui.view,arch_db:hu_disctrict_location.view_country_disctrict_search
+#: model_terms:ir.ui.view,arch_db:hu_disctrict_location.view_country_disctrict_tree
+#: model_terms:ir.ui.view,arch_db:hu_disctrict_location.view_partner_disctrict_form
+msgid "Disctrict"
+msgstr "Járás"
+
+#. module: hu_disctrict_location
+#: model:ir.model.fields,field_description:hu_disctrict_location.field_res_country_disctrict__code
+msgid "Disctrict Code"
+msgstr "Járás kódja"
+
+#. module: hu_disctrict_location
+#: model:ir.model.fields,field_description:hu_disctrict_location.field_res_company__disctrict_id
+msgid "Disctrict ID"
+msgstr "Járás ID"
+
+#. module: hu_disctrict_location
+#: model:ir.model.fields,field_description:hu_disctrict_location.field_res_country_disctrict__name
+msgid "Disctrict Name"
+msgstr "Járás neve"
+
+#. module: hu_disctrict_location
+#: model:ir.actions.act_window,name:hu_disctrict_location.action_country_disctrict
+#: model:ir.model,name:hu_disctrict_location.model_res_country_disctrict
+#: model:ir.model.fields,field_description:hu_disctrict_location.field_res_city__disctrict_id
+#: model:ir.model.fields,field_description:hu_disctrict_location.field_res_country__disctrict_ids
+#: model:ir.model.fields,field_description:hu_disctrict_location.field_res_country_state__disctrict_ids
+#: model:ir.ui.menu,name:hu_disctrict_location.menu_country_disctrict
+#: model_terms:ir.ui.view,arch_db:hu_disctrict_location.view_country_ext_form
+msgid "Disctricts"
+msgstr "Járások"
+
+#. module: hu_disctrict_location
+#: model_terms:ir.actions.act_window,help:hu_disctrict_location.action_country_disctrict
+msgid "Disctricts belong to countries and are part of your contacts' addresses."
+msgstr "A Járás országokhoz kapcsolódik és a cím mezők része."
+
+#. module: hu_disctrict_location
+#: model:ir.model.fields,field_description:hu_disctrict_location.field_res_country_disctrict__display_name
+msgid "Display Name"
+msgstr "Megjelenített név"
+
+#. module: hu_disctrict_location
+#: model_terms:ir.ui.view,arch_db:hu_disctrict_location.view_country_disctrict_search
+msgid "Group By"
+msgstr "Csoportosítás"
+
+#. module: hu_disctrict_location
+#: model:ir.model.fields,field_description:hu_disctrict_location.field_res_country_disctrict__id
+msgid "ID"
+msgstr ""
+
+#. module: hu_disctrict_location
+#: model:ir.model.fields,field_description:hu_disctrict_location.field_res_country_disctrict____last_update
+msgid "Last Modified on"
+msgstr "Utoljára módosítva"
+
+#. module: hu_disctrict_location
+#: model:ir.model.fields,field_description:hu_disctrict_location.field_res_country_disctrict__write_uid
+msgid "Last Updated by"
+msgstr "Utoljára frissítette"
+
+#. module: hu_disctrict_location
+#: model:ir.model.fields,field_description:hu_disctrict_location.field_res_country_disctrict__write_date
+msgid "Last Updated on"
+msgstr "Utoljára frissítve"
+
+#. module: hu_disctrict_location
+#: model:ir.model.fields,field_description:hu_disctrict_location.field_res_country_disctrict__state_id
+#: model_terms:ir.ui.view,arch_db:hu_disctrict_location.view_country_disctrict_search
+msgid "State"
+msgstr "Vármegye"
+
+#. module: hu_disctrict_location
+#: model:ir.model.constraint,message:hu_disctrict_location.constraint_res_country_disctrict_name_code_uniq
+msgid "The code of the state must be unique by country !"
+msgstr "Országonként egyedinek kell lennie a kódnak!"
+
+#. module: hu_disctrict_location
+#: model:ir.model.fields,help:hu_disctrict_location.field_res_country_disctrict__code
+msgid "The disctrict code"
+msgstr "Járás kódja"

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_partner_disctrict_form" model="ir.ui.view">
+            <field name="name">res.partner.disctrict</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='city']" position="after" >
+                    <field name="disctrict_id"
+                        options="{'no_open': True, 'no_create': True}"
+                        placeholder="Disctrict"
+                        class="oe_edit_only o_address_state"
+                        domain="[('state_id','=',state_id)]"
+                        attrs="{'readonly': [('type', '=', 'contact'),('parent_id', '!=', False)]}" 
+                        context="{'country_id': country_id, 'default_country_id': country_id,}"
+                    />
+                </xpath>
+                <xpath expr="//field[@name='child_ids']/form//field[@name='city']" position="after" >
+                    <field name="disctrict_id"
+                        options="{'no_open': True, 'no_create': True}"
+                        placeholder="Disctrict"
+                        class="oe_edit_only o_address_state"
+                        domain="[('state_id','=',state_id)]"
+                        attrs="{'readonly': [('type', '=', 'contact'),('parent_id', '!=', False)]}" 
+                        context="{'country_id': country_id, 'default_country_id': country_id,}"
+                    />
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -10,7 +10,7 @@ class CountryDisctrict(models.Model):
                help='Administrative divisions of a county.')
     country_id = fields.Many2one('res.country', string='Country', required=True)
     state_id = fields.Many2one('res.country.state', string='State', domain="[('country_id', '=', country_id)]")
-    code = fields.Char(string='Disctrict Code', help='The dictrict code.', required=True)
+    code = fields.Char(string='Disctrict Code', help='The disctrict code', required=True)
 
     _sql_constraints = [
         ('name_code_uniq', 'unique(country_id, code)', 'The code of the state must be unique by country !')
