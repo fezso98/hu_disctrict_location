@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Disctrict -->
+        <record id="view_country_disctrict_tree" model="ir.ui.view">
+            <field name="name">res.country.disctrict.tree</field>
+            <field name="model">res.country.disctrict</field>
+            <field name="arch" type="xml">
+                <tree string="Disctrict" editable="bottom">
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="country_id" options="{'no_create': True, 'no_open': True}"/>
+                    <field name="state_id" context="{'default_country_id': country_id}" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_country_disctrict_form" model="ir.ui.view">
+            <field name="name">res.country.disctrict.form</field>
+            <field name="model">res.country.disctrict</field>
+            <field name="arch" type="xml">
+                <form string="Disctrict">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="code"/>
+                            <field name="country_id" options='{"no_open": True, "no_create": True}'/>
+                            <field name="state_id" context="{'default_country_id': country_id}" options='{"no_open": True, "no_create": True}'/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_country_disctrict_search" model="ir.ui.view">
+            <field name="name">res.country.disctrict.search</field>
+            <field name="model">res.country.disctrict</field>
+            <field name="arch" type="xml">
+                <search string="Country">
+                    <field name="name" filter_domain="['|', ('name','ilike',self), ('code','ilike',self)]"
+                           string="Disctrict"/>
+                    <separator />
+                    <field name="country_id"/>
+                    <group string="Group By">
+                        <filter name="groupby_country" string="Country" context="{'group_by': 'country_id'}"/>
+                        <filter name="groupby_state" string="State" context="{'group_by': 'state_id'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="action_country_disctrict" model="ir.actions.act_window">
+            <field name="name">Disctricts</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.country.disctrict</field>
+            <field name="view_id" ref="view_country_disctrict_tree"/>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create a disctrict
+                </p><p>
+                    Disctricts belong to countries and are part of your contacts' addresses.
+                </p>
+            </field>
+        </record>
+
+        <menuitem id="menu_country_disctrict" 
+            action="action_country_disctrict"
+            parent="contacts.menu_localisation"
+            sequence="2"/>
+
+    </data>
+</odoo>
