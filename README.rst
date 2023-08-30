@@ -1,8 +1,7 @@
-Hungarian Address Extension for SIR2
+Disctrict location 
 ====================================
 
-This module holds extra fields may need to manage hungarian addresses.
-Based on base_address_extension addons
+This module add disctrict object to Country/State.
 
 Verzió
 ======
